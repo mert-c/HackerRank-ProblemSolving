@@ -1,0 +1,17 @@
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
+    // Write your code here
+    var counta = 0;
+    var counto = 0; 
+    for(var i = 0; i < apples.length; i++){
+        if((a + apples[i]) >= s && (a + apples[i])<= t){
+            counta ++;
+        }
+    }
+    for(var i = 0; i < oranges.length; i++){
+        if((b + oranges[i]) >= s && (b + oranges[i])<= t){
+            counto ++;
+        }
+    }
+    console.log(counta);
+    console.log(counto);
+}
